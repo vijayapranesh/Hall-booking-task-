@@ -6,6 +6,10 @@ const PORT = 8000
 
 app.use(express.json())
 
+app.get("/",(req,res)=>{
+    res.send("welcome")
+})
+
 app.use('/', AppRoutes)
 
 let date = new Date().toLocaleTimeString()
